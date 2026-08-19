@@ -1,0 +1,7 @@
+<resources>
+    <color name="hangup_red">#E53935</color>
+    <color name="hangup_red_pressed">#C62828</color>
+    <color name="hangup_disabled">#9E9E9E</color>
+    <color name="hangup_ok">#2E7D32</color>
+    <color name="on_hangup">#FFFFFF</color>
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">কল কাটার বাটন</string>
+    <string name="overlay_end_call">কল কাটুন</string>
+    <string name="ended_ok">কল কেটে দেওয়া হয়েছে</string>
+    <string name="ended_fail">কল কাটা যায়নি</string>
+</resources>

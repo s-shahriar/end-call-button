@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Deliberately narrow. We subscribe to window-state events ONLY for the call
+  apps, so this service is not woken on every screen change all day. Window
+  content is still reachable on demand via getWindows() for the node-click
+  fallback; packageNames filters events, not access.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagRetrieveInteractiveWindows|flagRequestFilterKeyEvents"
+    android:canRequestFilterKeyEvents="true"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/service_description"
+    android:notificationTimeout="200"
+    android:summary="@string/service_summary" />

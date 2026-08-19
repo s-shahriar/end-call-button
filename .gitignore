@@ -1,0 +1,16 @@
+# Signing material — NEVER commit these. The repo is public.
+keystore/
+keystore.properties
+*.jks
+*.keystore
+
+# Build output
+build/
+app/build/
+.gradle/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store

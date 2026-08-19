@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">End Call Button</string>
+    <string name="service_label">End Call Button</string>
+    <string name="service_summary">Shows a floating hang-up button during calls</string>
+    <string name="service_description">Puts a large floating End Call button on the screen whenever a call is running, so you can hang up from any screen. Also lets you end a call by pressing volume-down twice.</string>
+
+    <string name="overlay_end_call">END CALL</string>
+    <string name="overlay_cd">End the current call</string>
+
+    <string name="ended_ok">Call ended</string>
+    <string name="ended_fail">Couldn\'t end the call</string>
+
+    <string name="setup_title">Setup</string>
+    <string name="step_notifications">Notification access</string>
+    <string name="step_notifications_why">Detects when a call starts and ends. This is what keeps battery use at zero.</string>
+    <string name="step_accessibility">Accessibility service</string>
+    <string name="step_accessibility_why">Draws the floating button and enables the volume-down shortcut.</string>
+    <string name="step_phone">Phone permission</string>
+    <string name="step_phone_why">Needed to detect and end normal cellular calls.</string>
+
+    <string name="granted">Enabled</string>
+    <string name="not_granted">Not enabled — tap to fix</string>
+    <string name="position_title">Position the button</string>
+    <string name="position_why">Show the button, then press and hold it to drag it where you want. It snaps to the nearest edge and remembers the spot.</string>
+    <string name="test_button">Show the button (test)</string>
+    <string name="test_button_hide">Hide the test button</string>
+</resources>
