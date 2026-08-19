@@ -25,11 +25,6 @@ class Prefs(ctx: Context) {
         get() = sp.getInt("buttonDp", 64)
         set(v) = sp.edit().putInt("buttonDp", v).apply()
 
-    /** Double-press volume-down to hang up without touching the screen at all. */
-    var volumeShortcut: Boolean
-        get() = sp.getBoolean("volumeShortcut", true)
-        set(v) = sp.edit().putBoolean("volumeShortcut", v).apply()
-
     var lastMethod: String
         get() = sp.getString("lastMethod", "") ?: ""
         set(v) = sp.edit().putString("lastMethod", v).apply()

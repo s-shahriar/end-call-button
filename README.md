@@ -10,7 +10,6 @@ Built for a family member who kept losing the WhatsApp call screen mid-call (a s
 - Stays on top of every screen: home, other apps, lock screen
 - **Tap → confirm**: the first tap opens a wide `END CALL` bar, the second ends the call. Two big targets, so a stray touch cannot drop a call
 - **Long-press to drag**, snaps to either side edge and remembers the spot. The confirm bar always opens inward
-- **Double-press volume-down** to hang up without touching the screen at all
 - Never appears for a *ringing* call, so it can never reject a call by accident
 
 ## Battery
