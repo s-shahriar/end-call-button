@@ -19,10 +19,10 @@ android {
 
     defaultConfig {
         applicationId = "com.syed.endcall"
-        minSdk = 31          // both target phones run Android 12+ (CallStyle era)
+        minSdk = 30          // Android 11: the only API-31 dependency was TelephonyCallback
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.0.1"
+        versionCode = 3
+        versionName = "1.1.0"
     }
 
     signingConfigs {
@@ -32,6 +32,13 @@ android {
                 storePassword = keystoreProps.getProperty("storePassword")
                 keyAlias = keystoreProps.getProperty("keyAlias")
                 keyPassword = keystoreProps.getProperty("keyPassword")
+                // Sideloading, so sign with every scheme. AGP would drop v1
+                // (JAR) signing at minSdk 31, but some custom-ROM installers
+                // still verify that way and reject a v2-only APK with the
+                // useless "problem parsing the package".
+                enableV1Signing = true
+                enableV2Signing = true
+                enableV3Signing = true
             }
         }
     }
