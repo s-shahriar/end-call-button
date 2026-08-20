@@ -79,6 +79,10 @@ class OverlayController(private val service: AccessibilityService) : EndCallButt
                 view = v
                 params = lp
             }
+            // Silence here cost real debugging time: the service was dying before
+            // it ever got this far, and a swallowed failure looks identical to a
+            // button that simply never showed.
+            .onFailure { CallRegistry.note("overlay addView failed: $it") }
     }
 
     private fun hide() {
